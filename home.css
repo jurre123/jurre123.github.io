@@ -1,0 +1,862 @@
+			body {
+				margin: 0;
+				padding: 0;
+				background-color: white;
+			}
+
+			#menu-balk {
+				width: 100%;
+				height: 85px;
+				background-color: #fff;
+				margin: 0;
+				padding: 0;
+				position: fixed;
+				top: 0;
+				box-shadow: 0px 1px 5px gray;
+				display: flex;
+				justify-content: flex-end;
+				align-items: center;
+				transition: all 2s;
+			}
+
+			#logo-test{
+				width: 350px;
+				height: 75px;
+				margin: 0;
+				margin-top: 0px;
+				background-color: black;
+				position: fixed;
+				left: 5px;
+				transition: all 2s;
+			}
+
+			ul {
+				margin: 0 20px 0 0;
+				padding: 0;
+				float: right;
+			}
+
+			.menu-tekst {
+				font-family: 'Open Sans', sans-serif;
+				display: inline-block;
+				margin-right: 20px;
+				transition: all 2s;
+				font-size: 16px;
+			}
+
+			.menu-tekst > a {
+				display: flex;
+				justify-content: center;
+				color: black;
+				text-decoration: none;
+				transform: scale(1);
+				transition: transform 0.5s;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+			}
+
+			.menu-tekst > a:hover {
+				transform: scale(1.1);
+			}
+
+			#menu-knop {
+				width: 45px;
+				height: 40px;
+				margin: 0;
+				margin-top: 0px;
+				position: fixed;
+				right: 10px;
+				transform: scale(1);
+				transition: transform 0.5s;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+			}
+
+			#menu-knop:hover > div{
+				background-color: white;
+			}
+
+			#streepje1 {
+				margin-top: 0px;
+				background-color: #9C9C9C;
+				width: 43px;
+				height: 6px;
+				border: 1px solid #9C9C9C;
+				border-radius: 8px;
+				transform: scale(1);
+				transition: transform 0.5s;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+				transition: all 0.3s;
+			}
+
+			#streepje2 {
+				margin-top: 8px;
+				background-color: #9C9C9C;
+				width: 43px;
+				height: 6px;
+				border: 1px solid #9C9C9C;
+				border-radius: 8px;
+				transform: scale(1);
+				transition: transform 0.5s;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+				transition: all 0.3s;
+			}
+
+			#streepje3 {
+				margin-top: 8px;
+				background-color: #9C9C9C;
+				width: 43px;
+				height: 6px;
+				border: 1px solid #9C9C9C;
+				border-radius: 8px;
+				transform: scale(1);
+				transition: transform 0.5s;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+				transition: all 0.3s;
+			}
+
+			#uitklap-menu { 
+				width: 175px;
+				height: 300px;
+				margin: 0;
+				margin-top: 180px;
+				position: fixed;
+				right: 0;
+				background-color: #9C9C9C;
+				box-shadow: -2px 2px 10px #3B3B3B;
+				opacity: 0;
+				transform: scale(1);
+				transition: transform 0.5s;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+				transition: all 0.5s;
+			}
+
+			#behandelingen-menu {
+				width: 159px;
+				height: 273px;
+				margin: 0;
+				margin-top: -300px;
+				position: fixed;
+				background-color: #9C9C9C;
+				opacity: 0;
+				box-shadow: -2px 2px 10px #3B3B3B;
+				transform: scale(1.1);
+				transition: transform 0.5s;
+				-webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+				backface-visibility: hidden;
+				transition: all 1s;
+			}
+
+			#behandelingen:hover #behandelingen-menu {
+				margin-top: 44px;
+				opacity: 1;
+			}
+
+			#behandelingen:hover #tussenstukje {
+				margin-top: -50px;
+			}
+
+			#tussenstukje {
+				width: 140px;
+				height: 100px;
+				margin: 0;
+				margin-top: -200px;
+				position: fixed;
+			}
+
+			#plaatje1{
+				margin: 0;
+				margin-top: 85px;
+				padding: 0;
+				width: 100%;
+				height: calc( 100vh - 85px );
+				background-image: url("2017-08-21-PHOTO-00000715.jpg");
+				background-size: cover;
+				transition: all 2s;
+			}
+
+			#tekst-foto {
+				margin: 0;
+				font-family: 'Open Sans', sans-serif;
+				position: absolute;
+				margin-left: 30%;
+				margin-top: 25%;
+				font-size: 20px;
+				transition: font-size 2s;
+			}
+
+			#tekst-schrijver {
+				margin: 0;
+				font-family: 'Open Sans', sans-serif;
+				position: absolute;
+				font-size: 15px;
+				margin-left: 30%;
+				margin-top: 28%;
+				color: #202020;
+				transition: font-size 2s;
+
+			}
+
+			#intro-tekst {
+				width: 100%;
+				height: 300px;
+				background-color: white;
+				padding-top: 20px;
+				text-align: center;
+				transition: padding-top 2s;
+			}
+
+			#homepage-tekst {
+				font-family: 'Raleway', sans-serif;
+				font-size: 22px;
+				width: 100%;
+				padding: 0 100px;
+				box-sizing: border-box;
+				color: #666666;
+				transition: all 2s;
+			}
+
+			#plaatje2 {
+				margin: 0;
+				width: 500px;
+				height: 500px;
+				margin-left: 10%;
+				margin-top: 100px;
+				background-image: url("2017-08-21-PHOTO-00000716.jpg");
+				background-size: cover;
+				transition: margin-top 4s;
+				position: absolute;
+				transition: all 2s;
+			}
+
+			#plaatje3{
+				margin: 0;
+				width: 500px;
+				height: 500px;
+				margin-top: 700px;
+				background-image: url("2017-08-21-PHOTO-00000717.jpg");
+				background-size: cover;
+				transition: all 2s;
+				position: absolute;
+				right: 10%;
+
+			}
+
+			#plaatje4{
+				margin: 0;
+				width: 500px;
+				height: 500px;
+				margin-left: 10%;
+				margin-top: 1300px;
+				background-image: url("2017-08-21-PHOTO-00000718.jpg");
+				background-size: cover;
+				transition: all 2s;
+				position: absolute;
+			}
+
+			#plaatje5{
+				margin: 0;
+				width: 500px;
+				height: 500px;
+				margin-top: 1900px;
+				background-image: url("2017-08-21-PHOTO-00000719.jpg");
+				background-size: cover;
+				transition: all 2s;
+				position: absolute;
+				right: 10%;
+			}
+
+			#plaatje6{
+				margin: 0;
+				width: 500px;
+				height: 500px;
+				margin-left: 10%;
+				margin-top: 2500px;
+				background-image: url("2017-08-22-PHOTO-00001452.jpg");
+				background-size: cover;
+				transition: all 2s;
+				position: absolute;
+			}
+
+			.blokjestitel{
+				margin: 0;
+				font-family: 'Open Sans', sans-serif;
+				margin-top: 20px;
+				font-size: 19px;
+				transition: all 2s;
+			}
+
+			#blokje1 {
+				width: 400px;
+				height: 350px;
+				background-color: white;
+				margin: 0;
+				margin-left: 35%;
+				margin-top: 175px;
+				position: absolute;
+				transition: all 2s;
+				box-shadow: 20px 20px 80px #bbbbbb;
+				text-align: center;
+				transform: none;
+			}
+
+			#blokje1.is--entered {
+				animation: fadeInLeft 2s ease;
+			}
+
+			#blokje2.is--entered {
+				animation: fadeInRight 2s ease;
+			}
+
+			#blokje3.is--entered {
+				animation: fadeInLeft 2s ease;
+			}
+
+			#blokje4.is--entered {
+				animation: fadeInRight 2s ease;
+			}
+
+			#blokje5.is--entered {
+				animation: fadeInLeft 2s ease;
+			}
+
+			@keyframes fadeInLeft {
+				from {
+					transform: translate3d(40px, 0, 0);
+				}
+				to {
+					transform: none;
+				}
+			}
+
+			@keyframes fadeInRight {
+				from {
+					transform: translate3d(-40px, 0, 0);
+				}
+				to {
+					transform: none;
+				}
+			}
+
+			#blokje2 {
+				width: 400px;
+				height: 350px;
+				background-color: white;
+				margin: 0;
+				margin-top: 775px;
+				position: absolute;
+				transition: all 2s;
+				box-shadow: -20px 20px 80px #bbbbbb;
+				right: 35%;
+				text-align: center;
+				transform: none;
+			}
+
+			#blokje3 {
+				width: 400px;
+				height: 350px;
+				background-color: white;
+				margin: 0;
+				margin-left: 35%;
+				margin-top: 1375px;
+				position: absolute;
+				transition: all 2s;
+				box-shadow: 20px 20px 80px #bbbbbb;
+				text-align: center;
+				transform: none;
+
+			}
+
+			#blokje4 {
+				width: 400px;
+				height: 350px;
+				background-color: white;
+				margin: 0;
+				margin-top: 1975px;
+				position: absolute;
+				transition: all 2s;
+				box-shadow: -20px 20px 80px #bbbbbb;
+				right: 35%;
+				text-align: center;
+				transform: none;
+
+			}
+
+			#blokje5 {
+				width: 400px;
+				height: 350px;
+				background-color: white;
+				margin: 0;
+				margin-left: 35%;
+				margin-top: 2575px;
+				position: absolute;
+				transition: all 2s;	
+				box-shadow: 20px 20px 80px #bbbbbb;
+				text-align: center;
+				transform: none;
+
+			}
+
+			.behandelingen{
+				font-family: 'Raleway', sans-serif;
+				font-size: 18px;
+				box-sizing: border-box;
+				padding: 0 10px;
+				transition: all 2s;
+			}
+
+			#plaatje7 {
+				width: calc( 854px / 3 );
+				height: calc( 1280px / 3 );
+				background-image: url("_3354d.jpeg");
+				background-size: cover;
+				margin-top: 3100px;
+				margin-left: 10%;
+				position: absolute;
+			}
+
+			#blokje6 {
+				padding: 0;
+				width: calc(80% - 854px / 3 );
+				height: calc( 1280px / 3 );
+				background-color: white;
+				position: absolute;
+				margin-top: 3100px;
+				margin-left: calc( 10% + 854px / 3);
+				margin-bottom: 50px;
+				text-align: center;
+			}
+
+			.knop {
+				padding: 0;
+				margin-top: 30px;
+				width: 100px;
+				background-color: gray;
+				margin-left: 150px;
+				text-align: center;
+				transition: all 0.5s;
+				border: 1px solid gray;
+				border-radius: 5px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+
+			}
+
+			.knop:hover {
+				background-color: white;
+			}
+
+			.knop:hover a {
+				color: gray;
+			}
+
+			.knop > a {
+				margin: 0;
+				color: white;
+				text-decoration: none;
+				font-family: 'Raleway', sans-serif;
+			}
+
+			#over-mij-homepage {
+				font-family: 'Raleway', sans-serif;
+				font-size: 120%;
+				width: 100%;
+				padding: 0 100px;
+				box-sizing: border-box;
+				color: #666666;
+			}
+
+			#over-mij-knop {
+				margin-left: 100px;
+			}
+
+			@media screen and (max-width: 810px) {
+				#tekst-foto {
+					font-size: 16px;
+				}
+				#tekst-schrijver {
+					font-size: 12px;
+				}
+			}
+
+			@media screen and (max-width: 730px) {
+				#homepage-tekst {
+					font-size: 20px;
+					padding: 0 50px;
+				}
+			}
+
+			@media screen and (max-width: 528px) {
+				#homepage-tekst {
+					padding: 0 30px;
+					font-size: 19px;
+				}
+			}
+
+			@media screen and (max-width: 440px) {
+				#plaatje2 {
+					margin-top: 150px;
+				}
+				#plaatje3 {
+					margin-top: 750px;
+				}
+				#plaatje4 {
+					margin-top: 1350px;
+				}
+				#plaatje5 {
+					margin-top: 1950px;
+				}
+				#plaatje6 {
+					margin-top: 2550px;
+				}
+			}
+
+			@media screen and (max-width: 675px) {
+				#tekst-foto {
+					font-size: 15px;
+				}
+				#tekst-schrijver {
+					font-size: 12px;
+				}
+			}
+
+			@media screen and (max-width: 385px) {
+				#homepage-tekst {
+					padding: 0 20px;
+					font-size: 18px;
+				}
+			}
+
+			@media screen and (max-width: 327px) {
+				#homepage-tekst {
+					padding: 0 20px;
+					font-size: 17px;
+				}
+			}
+
+			@media screen and (max-width: 300px) {
+				#homepage-tekst {
+					padding: 0 15px;
+					font-size: 16px;
+				}
+			}
+
+			@media screen and (max-width: 269px) {
+				#intro-tekst {
+					padding-top: 10px;
+				}
+				#homepage-tekst {
+					padding: 0 13px;
+					font-size: 15px;
+				}
+			}
+
+			@media screen and (max-width: 240px) {
+				#intro-tekst {
+					padding-top: 5px;
+				}
+				#homepage-tekst {
+					padding: 0 10px;
+					font-size: 13px;
+				}
+			}
+
+			@media screen and (min-width: 1000px) {
+				#homepage-tekst {
+					font-size: 27px;
+				}
+			}
+
+			@media screen and (max-width: 650px) {
+				#blokje1 {
+					margin-left: 0;
+					left: 15%;
+					width: 70%;
+				}
+				#blokje2 {
+					margin-left: 0;
+					left: 15%;
+					width: 70%;
+				}
+				#blokje3 {
+					margin-left: 0;
+					left: 15%;
+					width: 70%;
+				}
+				#blokje4 {
+					margin-left: 0;
+					left: 15%;
+					width: 70%;
+				}
+				#blokje5 {
+					margin-left: 0;
+					left: 15%;
+					width: 70%;
+				}
+				.knop {
+					margin-left: calc( 50% - 50px );
+				}
+				#plaatje2 {
+					left: 5%;
+					margin-left: 0;
+					width: 90%;
+					height: 0;
+					padding-top: 90%;
+				}
+				#plaatje3 {
+					left: 5%;
+					width: 90%;
+					height: 0;
+					padding-top: 90%;
+				}
+				#plaatje4 {
+					left: 5%;
+					margin-left: 0;
+					width: 90%;
+					height: 0;
+					padding-top: 90%;
+				}
+				#plaatje5 {
+					left: 5%;
+					width: 90%;
+					height: 0;
+					padding-top: 90%;
+				}
+				#plaatje6 {
+					left: 5%;
+					margin-left: 0;
+					width: 90%;
+					height: 0;
+					padding-top: 90%;
+				}
+				#blokje1 {
+					margin-top: 275px;
+				}
+				#blokje2 {
+					margin-top: 875px;
+				}
+				#blokje3 {
+					margin-top: 1475px;
+				}
+				#blokje4 {
+					margin-top: 2075px;
+				}
+				#blokje5 {
+					margin-top: 2675px;
+				}
+			}
+
+			@media screen and (max-width: 500px) {
+				.blokjestitel {
+					font-size: 17px;
+				}
+				.behandelingen {
+					font-size: 16px;
+				}
+			}
+
+			@media screen and (max-width: 1070px) {
+				.menu-tekst {
+					margin-right: 7px;
+				}
+			}
+
+			@media screen and (max-width: 1018px) {
+				.menu-tekst {
+					font-size: 14px;
+				}
+				#menu-balk {
+					height: 60px;
+				}
+				#plaatje1 {
+					margin-top: 60px;
+					height: calc( 100vh - 60px );
+				}
+				#logo-test {
+					height: 50px;
+					width: 234px;
+				}
+			}
+
+			@media screen and (max-width: 850px) {
+				.menu-tekst {
+					transform: scale(0);
+				}
+			}
+
+			@media screen and (min-width: 850px) {
+				#menu-knop {
+					transform: scale(0);
+				}
+				#uitklap-menu {
+					transform: scale(0);
+				}
+				#streepje1 {
+					transform: scale(0);
+				}
+				#streepje2 {
+					transform: scale(0);
+				}
+				#streepje3 {
+					transform: scale(0);
+				}
+			}
+
+			@media screen and (max-width: 520px) {
+				#blokje1 {
+					margin-left: 0;
+					left: 10%;
+					width: 80%;
+				}
+				#blokje2 {
+					margin-left: 0;
+					left: 10%;
+					width: 80%;
+				}
+				#blokje3 {
+					margin-left: 0;
+					left: 10%;
+					width: 80%;
+				}
+				#blokje4 {
+					margin-left: 0;
+					left: 10%;
+					width: 80%;
+				}
+				#blokje5 {
+					margin-left: 0;
+					left: 10%;
+					width: 80%;
+				}
+			}
+
+			@media screen and (max-width: 400px) {
+				#plaatje2 {
+					left: 0;
+					margin-left: 0;
+					width: 100%;
+					height: 0;
+					padding-top: 100%;
+				}
+				#plaatje3 {
+					left: 0;
+					width: 100%;
+					height: 0;
+					padding-top: 100%;
+				}
+				#plaatje4 {
+					left: 0;
+					margin-left: 0;
+					width: 100%;
+					height: 0;
+					padding-top: 100%;
+				}
+				#plaatje5 {
+					left: 0;
+					width: 100%;
+					height: 0;
+					padding-top: 100%;
+				}
+				#plaatje6 {
+					left: 0;
+					margin-left: 0;
+					width: 100%;
+					height: 0;
+					padding-top: 100%;
+				}
+				#blokje1 {
+					margin-left: 0;
+					left: 5%;
+					width: 90%;
+				}
+				#blokje2 {
+					margin-left: 0;
+					left: 5%;
+					width: 90%;
+				}
+				#blokje3 {
+					margin-left: 0;
+					left: 5%;
+					width: 90%;
+				}
+				#blokje4 {
+					margin-left: 0;
+					left: 5%;
+					width: 90%;
+				}
+				#blokje5 {
+					margin-left: 0;
+					left: 5%;
+					width: 90%;
+				}
+			}
+
+			@media screen and (max-width: 350px) {
+				#blokje1 {
+					margin-left: 0;
+					left: 2%;
+					width: 96%;
+				}
+				#blokje2 {
+					margin-left: 0;
+					left: 2%;
+					width: 96%;
+				}
+				#blokje3 {
+					margin-left: 0;
+					left: 2%;
+					width: 96%;
+				}
+				#blokje4 {
+					margin-left: 0;
+					left: 2%;
+					width: 96%;
+				}
+				#blokje5 {
+					margin-left: 0;
+					left: 2%;
+					width: 96%;
+				}
+			}
+
+			@media screen and (max-width: 320px) {
+				#blokje1 {
+					box-shadow: 20px -20px 80px #656565;
+					margin-top: 350px;
+					margin-left: 0;
+					left: 0;
+					width: 100%;
+				}
+				#blokje2 {
+					box-shadow: 20px -20px 80px #656565;
+					margin-top: 950px;
+					margin-left: 0;
+					left: 0;
+					width: 100%;
+				}
+				#blokje3 {
+					box-shadow: 20px -20px 80px #656565;
+					margin-top: 1505px;
+					margin-left: 0;
+					left: 0;
+					width: 100%;
+				}
+				#blokje4 {
+					box-shadow: 20px -20px 80px #656565;
+					margin-top: 2150px;
+					margin-left: 0;
+					left: 0;
+					width: 100%;
+				}
+				#blokje5 {
+					box-shadow: 20px -20px 80px #656565;
+					margin-top: 2750px;
+					margin-left: 0;
+					left: 0;
+					width: 100%;
+				}
+			}
